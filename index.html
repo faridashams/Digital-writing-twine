@@ -59,6 +59,12 @@ tw-passage {
 .story-image {
   grid-column: 2;  /* sets which column the image appears in */
   grid-row: 1;
+}
+
+tw-story[tags~="example-background"] {  /* the tag added in step 2 */
+  background-image: url(./images/flapper.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Digital Writing " tags="" position="675,350" size="100,100">I&#39;m going to the bookshop to buy [[Sunrise on the Reaping]] and [[This Woven Kingdom]]</tw-passagedata><tw-passagedata pid="2" name="Sunrise on the Reaping" tags="" position="675,475" size="100,100">How intense where Haymitch&#39;s games?
 
 [[His mother, brother, and girlfriend died]]
@@ -82,7 +88,9 @@ img.story-image-smaller {  /* this selects all images with the story-image-small
   width: 50%;
 } 
 
-</tw-passagedata><tw-passagedata pid="5" name="He made a deal with the devil" tags="" position="800,600" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;Cyrus and Alizeh&lt;/div&gt;&lt;div class=&quot;story-image&quot;&gt;&lt;img src=&quot;./images/cyrusalizeh.jpg&quot; alt=&quot;cyrusalizeh&quot; /&gt;&lt;/div&gt;&lt;/div&gt;</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="5" name="He made a deal with the devil" tags="" position="800,600" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;Cyrus and Alizeh&lt;/div&gt;&lt;div class=&quot;story-image&quot;&gt;&lt;img src=&quot;./images/cyrusalizeh.jpg&quot; alt=&quot;cyrusalizeh&quot; /&gt;&lt;/div&gt;&lt;/div&gt; 
+
+[[Cyrus]]</tw-passagedata><tw-passagedata pid="6" name="Cyrus" tags="example-background" position="800,725" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
